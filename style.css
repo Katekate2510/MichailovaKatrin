@@ -1,0 +1,138 @@
+
+* {
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-top: 0;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #666;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #000;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 22px;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+.activity-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.activity-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.slideshow img {
+    display: none;
+    width: 100%;
+    height: auto;
+}
+
+.slideshow img.active {
+    display: block;
+}
+
+@media screen and (max-width: 768px) { 
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    nav li {
+        margin-bottom: 10px; 
+        margin-right: 0;
+    }
+
+    .activity-card {
+        width: 100%; 
+    }
+
+    section img {
+        width: 100%;
+        height: auto; 
+    }
+
+    footer {
+        padding: 10px; 
+    }
+}

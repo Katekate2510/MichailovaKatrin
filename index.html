@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Досуговый Кружок для Пожилых Людей</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Жизнь в ритме</h1> 
+        <h1>Добро пожаловать в наш досуговый кружок!</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">О нас</a></li>
+                <li><a href="#activities">Мероприятия</a></li>
+                <li><a href="#forum">Форум</a></li>
+                <li><a href="#contact">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>Кто мы такие?</h2>
+            <p>Мы — сообщество зрелых энтузиастов, стремящихся провести время интересно и полезно.</p>
+            
+          <div class="slideshow">
+            <img src="фото.jpg" alt="Фото основателей кружка" width="700" height="450">
+            <img src="фото2.jpg" alt="Фото участников кружка" width="760" height="500">
+            <img src="фото3.jpg" alt="Фото участников кружка" width="760" height="500">
+            <img src="фото4.jpg" alt="Фото основателей кружка" width="700" height="450">
+            <img src="фото5.jpg" alt="Фото основателей кружка" width="700" height="450">
+        </div>
+    </section>
+        
+        <section id="activities">
+            <h2>Наши мероприятия</h2>
+            <div class="activity-card">
+                <h3>Клуб любителей книг</h3>
+                <p>Каждую неделю мы собираемся, чтобы обсудить новые книги и поделиться впечатлениями.</p>
+                <button>Узнать больше</button>
+            </div>
+            <div class="activity-card">
+                <h3>Шахматный клуб</h3>
+                <p>Игра в шахматы поддерживает активный образ жизни и стимулирует умственную активность, помогая сохранять социальные контакты и улучшая когнитивные функции.</p>
+                <button>Узнать больше</button>
+            </div>
+            <div class="activity-card">
+                <h3>Творческая мастерская</h3>
+                <p>Здесь вы сможете раскрыть свой творческий потенциал: рисование, рукоделие и многое другое.</p>
+                <button>Узнать больше</button>
+            </div>
+            <div class="activity-card">
+                <h3>Вокал</h3>
+                <p>Пение вызывает выброс эндорфинов — гормонов счастья, что снижает уровень стресса и тревожности. </p>
+                <button>Узнать больше</button>
+            </div>
+            <div class="activity-card">
+                <h3>Прогулки на свежем воздухе, скандинавская ходьба, йога</h3>
+                <p>Совместные прогулки по паркам и живописным местам города, занятия йогой и пилатесом - помогут вам оставаться активными и здоровыми.</p>
+                <button>Узнать больше</button>
+            </div>
+            <div class="activity-card">
+                <h3>Бачата</h3>
+                <p>Занятия бачатой могут стать отличным способом поддержания физического и душевного здоровья для пожилых людей, а также прекрасным дополнением к активному образу жизни.</p>
+                <button>Узнать больше</button>
+            </div>
+        </section>
+        
+        <section id="forum">
+            <h2>Наш форум</h2>
+            <p>Общайтесь, делитесь опытом и находите новых друзей на нашем форуме.</p>
+            <button>Перейти на форум</button>
+        </section>
+        
+        <section id="contact">
+            <h2>Связаться с нами</h2>
+            <form action="/submit-form" method="post">
+                <label for="name">Ваше имя:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Ваш email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Сообщение:</label>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2023 Досуговый Кружок для Пожилых Людей. Все права защищены.</p>
+    </footer>
+
+  <script> const slideshow = document.querySelector('.slideshow'); const images = slideshow.querySelectorAll('img'); let currentIndex = 0; function nextImage() { images[currentIndex].classList.remove('active'); currentIndex++; if (currentIndex >= images.length) { currentIndex = 0; } images[currentIndex].classList.add('active'); } setInterval(nextImage, 7000); </script>
+    
+</body>
+</html>
